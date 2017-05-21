@@ -20,7 +20,7 @@ Requirements
 How to use it
 -------------
 
-Please use gnome-builder, clone the project, run and enjoy:
+Please use gnome-builder in runtime host mode (flatpak not found with webkit yet), clone the project, run and enjoy:
 
 Future Plans
 ------------
