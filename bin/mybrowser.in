@@ -1,0 +1,17 @@
+#!@PYTHON@
+
+import sys
+import locale
+import gettext
+
+localedir = '@localedir@'
+
+locale.bindtextdomain('mybrowser', localedir)
+locale.textdomain('mybrowser')
+gettext.bindtextdomain('mybrowser', localedir)
+gettext.textdomain('mybrowser')
+
+if __name__ == "__main__":
+    sys.path.insert(1, '@pythondir@')
+    from mybrowser import __main__
+    __main__.main()
